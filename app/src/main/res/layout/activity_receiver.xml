@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiverActivity">
+
+    <TextView
+        android:id="@+id/tvReceivedInfoFromBroadCast"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Info"
+        app:layout_constraintEnd_toStartOf="@+id/btClearView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btClearView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Clear 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvReceivedInfoFromBroadCast2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="ReceivedInfo"
+        app:layout_constraintEnd_toStartOf="@+id/btClearView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReceivedInfoFromBroadCast" />
+
+    <Button
+        android:id="@+id/btClearView2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Clear 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btClearView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
